@@ -78,12 +78,12 @@ defn run-design (circuit:Instantiable, run-checks?:True|False) :
   if run-checks? :
     run-checks("checks.txt")
     view-design-explorer()
-    export-design()
+    ; export-design()
   else:  
     view-board()
     ; view-schematic()
     view-design-explorer()
-    export-design()
+    ; export-design()
 
 ; ; We want decoupling capacitors to be close to the component being decoupled
 ; defn bypass-cap-strap (power-pin:JITXObject, gnd-pin:JITXObject, params:Tuple<KeyValue>) -> JITXObject :
